@@ -57,7 +57,7 @@ function removeNavClickEvent() {
 const heroSection = document.querySelector(".hero")
 const heroImg = document.createElement("img")
 
-heroImg.src = "./photo.png"
+heroImg.src = "./assets/photo.png"
 heroImg.alt = "Angelika Valerio"
 
 function handleWindowScroll() {
@@ -104,21 +104,21 @@ const projectDetails = [
   {
     name: "Portfolio Website",
     tools: ['HTML', 'CSS', 'JavaScript'],
-    img: "./portfolio.webp",
+    img: "./assets/portfolio.webp",
     desc: "This is my first portfolio website made with Vanilla JS and 💖.",
     live: "#"
   },
   {
     name: "CRAPPO Website",
     tools: ['Vue', 'SASS'],
-    img: "./crappo.webp",
+    img: "./assets//crappo.webp",
     desc: "This is my solution for the CRAPPO website frontend development challenge from Coding360 using Nuxt 3.",
     live: "https://crappo-app-nuxt.vercel.app/"
   },
   {
     name: "Admin Portal",
     tools: ['React', 'CSS', "MaterialUI"],
-    img: "./admin-portal.webp",
+    img: "./assets//admin-portal.webp",
     desc: "An admin portal client-side application with dark mode support.",
     live: "https://admin-portal-react-lake.vercel.app/"
   },

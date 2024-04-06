@@ -14,7 +14,12 @@ function toggleTheme() {
   }
 }
 
-toggleTheme()
+setTimeout(() => {
+  toggleTheme()
+}, 300)
+
+// toggleTheme()
+
 
 toggleSwitch.addEventListener("change", toggleTheme)
 

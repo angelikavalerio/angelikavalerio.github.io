@@ -2,7 +2,7 @@ const body = document.querySelector('body')
 
 //theme switch
 const toggleSwitch = document.querySelector("#theme-switch")
-toggleSwitch.checked = window.localStorage.getItem("isDark") === "true" ? true : false
+
 
 function toggleTheme() {
   window.localStorage.setItem("isDark", toggleSwitch.checked)
@@ -14,11 +14,11 @@ function toggleTheme() {
   }
 }
 
-setTimeout(() => {
-  toggleTheme()
-}, 300)
+const themeMode = new Promise((resolve, reject) => {
+  resolve(toggleSwitch.checked = window.localStorage.getItem("isDark") === "true" ? true : false)
+})
 
-// toggleTheme()
+themeMode.then(() => toggleTheme())
 
 
 toggleSwitch.addEventListener("change", toggleTheme)

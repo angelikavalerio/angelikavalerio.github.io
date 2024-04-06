@@ -32,11 +32,13 @@ function menuHandler() {
   if (isMenuOpen) {
     menuBtn.classList.add("open")
     mobileNav.classList.add("open")
+    mobileNav.classList.remove("close")
     body.style.overflowY = "hidden"
   }
   else {
     menuBtn.classList.remove("open")
     mobileNav.classList.remove("open")
+    mobileNav.classList.add("close")
     body.style.overflowY = "auto"
   }
 }
@@ -110,7 +112,7 @@ const projectDetails = [
   },
   {
     name: "CRAPPO Website",
-    tools: ['Vue', 'SASS'],
+    tools: ['Vue', 'Nuxt3', 'SASS'],
     img: "./assets//crappo.webp",
     desc: "This is my solution for the CRAPPO website frontend development challenge from Coding360 using Nuxt 3.",
     live: "https://crappo-app-nuxt.vercel.app/"

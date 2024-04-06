@@ -18,7 +18,7 @@ const themeMode = new Promise((resolve, reject) => {
   resolve(toggleSwitch.checked = window.localStorage.getItem("isDark") === "true" ? true : false)
 })
 
-themeMode.then(() => toggleTheme())
+themeMode.then(toggleTheme())
 
 
 toggleSwitch.addEventListener("change", toggleTheme)
